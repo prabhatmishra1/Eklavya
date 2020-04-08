@@ -1,0 +1,37 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Payment Acknowledgement</title>
+	<meta charset="UTF-8">
+    <meta name="description" content="Eklavya Education Template">
+    <meta name="keywords" content="Eklavya, education, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+    <link href="img/favicon.ico" rel="shortcut icon"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="{% static 'css/final.css' %}"/>
+</head>
+<body>
+  <div class="final">
+	<div class="pay-top">
+          <img src="{% static 'images/logo.png' %}" alt="" id="logo">
+          <label id="page-name"></label>
+    </div>
+
+		<div class="acknowledgement">
+      <div class="ackno">
+        Thank you for Enrolling <label class="c-name">this course</label> <br>Go to your <a href="/" title="" class="next-page">Dashboard</a>
+      </div>
+
+  </div>
+	</div>
+</body>
+</html>

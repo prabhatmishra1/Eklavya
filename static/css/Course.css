@@ -1,0 +1,420 @@
+/*Style for Course DIV*/
+.course{
+    position: absolute;
+    top:137px;
+    width: 100%;
+    height: 384px;
+    background: #fff;
+}
+
+/*Style for course label DIV*/
+.course-label{
+    position: absolute;
+    width: 25%;
+    margin-left: 90px;
+    margin-top: 10px;
+    padding-top: 0px;
+    background: #fff;
+    text-align: left;
+    height: 60px;
+}
+
+/*Style for Name Label*/
+
+#label1{
+    color: black;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+/*End of Style for Edit course label DIV*/
+
+
+/*Style for Course & Search DIV*/
+
+.course-select{
+    position: absolute;
+    width: 100%;
+    margin-top: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #fff;
+    box-shadow: 0px 1px 4px rgba(.5, .5, 0, .5);
+    color: black;
+    font-size: 16px;
+}
+
+/*Style for Course Link*/
+.course-link{
+    background: #d82a4e;
+    outline: none;
+    height: 30px;
+    width: 200px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+}
+
+.course-link:hover, :focus{
+    color: #d82a4e;
+    background: #fff;
+    outline:none;
+    text-decoration: none;
+}
+
+/*End of Style for Course Link*/
+
+/*Style for Search Bar*/
+.search{
+    position: absolute;
+    width: 320px;
+    margin-top: -30px;
+    margin-left: 900px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    background: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+#search-bar{
+    outline: none;
+    border: none;
+    background: #fff;
+    color: #d82a4e;
+    box-sizing: border-box;
+    border-bottom: 2px  solid #d82a4e;
+}
+
+#search-btn{
+    border: 2px  solid #d82a4e;
+    background: #fff;
+    font-size: 15px;
+    font-family: fantasy;
+    border-radius: 8px;
+    outline: none;
+    color: #d82a4e;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#search-btn:hover{
+    background: #d82a4e;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*End of Style for Search Bar*/
+/*End of Style for Course & Search DIV*/
+
+#com-perk2{
+    position: absolute;
+    width: 15%;
+    margin-left: 800px;
+    padding-top: 33px;
+    background: #fff;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    border: 1px solid;
+}
+
+/*End of Style for Course DIV*/
+
+/*Style for course-1 DIV*/
+
+.off-course{
+    position: absolute;
+    width: 100%;
+    height: 990px;
+    margin-top: 122px;
+}
+
+.course-0{
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    height: 900px;
+}
+
+.course-1{
+    position: absolute;
+    width: 100%;
+    top: 133px;
+    height: 900px;
+}
+
+.course-2{
+    position: absolute;
+    width: 100%;
+    top: 170px;
+    height: 300px;
+}
+
+.course-3{
+    position: absolute;
+    width: 100%;
+    top: 327px;
+    height: 300px;
+}
+
+.courses{
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 20px;
+    box-shadow: 1px 3px 6px rgba(.5, .5, 0, .5);
+    width: 1095px
+    height: 130px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.courses-on{
+  position: relative;
+  margin-top: 30px;
+  margin-left: 100px;
+  box-shadow: 1px 3px 6px rgba(.5, .5, 0, .5);
+  width: 1095px;
+  height: 130px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.course-bt{
+    position: absolute;
+    width: 200px;
+    height: 130px;
+    background: #d82a4e;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+#course-btn{
+    position: absolute;
+    width: 197px;
+    height: 127px;
+    text-align: center;
+    margin-top: 1px;
+    background: #d82a4e;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 1px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    -webkit-animation: glowing 2000ms infinite;
+    -moz-animation: glowing 2000ms infinite;
+    -o-animation: glowing 2000ms infinite;
+    animation: glowing 2000ms infinite;
+}
+
+@-webkit-keyframes glowing {
+  0% { background-color: #d82a4e; -webkit-box-shadow: 0 0 3px #d82a4e; }
+  50% { background-color: #d82a4e; -webkit-box-shadow: 0 0 20px #d82a4e; }
+  100% { background-color: #d82a4e; -webkit-box-shadow: 0 0 3px #d82a4e; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: #d82a4e; -moz-box-shadow: 0 0 3px #d82a4e; }
+  50% { background-color: #d82a4e; -moz-box-shadow: 0 0 20px #d82a4e; }
+  100% { background-color: #d82a4e; -moz-box-shadow: 0 0 3px #d82a4e; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: #d82a4e; box-shadow: 0 0 3px #d82a4e; }
+  50% { background-color: #d82a4e; box-shadow: 0 0 20px #d82a4e; }
+  100% { background-color: #d82a4e; box-shadow: 0 0 3px #d82a4e; }
+}
+
+@keyframes glowing {
+  0% { background-color: #d82a4e; box-shadow: 0 0 3px #d82a4e; }
+  50% { background-color: #d82a4e; box-shadow: 0 0 20px #d82a4e; }
+  100% { background-color: #d82a4e; box-shadow: 0 0 3px #d82a4e; }
+}
+
+.video-number{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 26px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    border-color: ;
+    width: 150px;
+    cursor: pointer;
+}
+
+/* Style for Course-details DIV*/
+.course-details{
+    position: absolute;
+    margin-left: 200px;
+    width: 691px;
+    height: 130px;
+    background: #fff;
+    border: 1px solid #d82a4e;
+}
+
+.course-img{
+    margin-top: 2px;
+    margin-left: 00px;
+    width: 70px;
+    height: 70px;
+    margin-left: 300px;
+
+}
+
+.course-name{
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    background: #fff;
+    margin-left: 8px;
+    width: 400px;
+}
+
+.course-name-on{
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    background: #fff;
+    margin-left: 8px;
+    width: 405px;
+}
+
+.validity{
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    background: #fff;
+    text-align: right;
+    margin-left: 20px;
+    width: 250px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.validity-on{
+    color: black;
+    font-weight: 800;
+    font-size: 18px;
+    background: #fff;
+    text-align: center;
+    margin-left: 10px;
+    width: 250px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.instructor{
+    color: gray;
+    font-weight: 600;
+    font-size: 14px;
+    background: #fff;
+    margin-left: 10px;
+    text-align: left;
+    width: 400px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.price{
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 100px;
+    text-align: right;
+    width: 150px;
+    font-family: 'Raleway', sans-serif;
+}
+/* End of Style for Course-details DIV*/
+
+
+/* Style for Course price DIV*/
+.course-show{
+    position: absolute;
+    margin-left: 891px;
+    width: 205px;
+    height: 130px;
+    background: #d82a4e;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#go-course{
+    position: absolute;
+    width: 110px;
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+    background: #d82a4e;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    outline: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 45px;
+}
+
+#go-course:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*Style for Course rating*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.rate {
+    float: left;
+    height: 40px;
+    padding: 0 15px;
+    margin-top: 80px;
+    margin-left: 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#fff;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+/*Style for Completed Course Rating*/
+.com-rate{
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 7px;
+    margin-top: 92px;
+    text-align: center;
+    width: 190px;
+}

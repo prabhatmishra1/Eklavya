@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Eklavya Education Template">
+    <meta name="keywords" content="Eklavya, education, creative, html">
+    <title>Payment template</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="{%static 'images/favicon.ico'%}" rel="shortcut icon"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="{%static 'css/Payment.css'%}"/>
+    <script src="{%static 'javascript/jquery.payform.min.js'%}" charset="utf-8"></script>
+    <script src="{%static 'javascript/script.js'%}"></script>
+
+</head>
+
+<body>
+
+ <div class="pay-top">
+      <img src="{%static 'images/logo.png'%}" alt="" id="logo">
+      <label id="page-name">CONTRIBUTE HERE</label>
+ </div>
+
+
+ <div class="profile">
+         <div class="profile-div">
+          <div id="course-name">
+            <label style="margin-top: 20px">Complete C Programming</label>
+          </div>
+          <div class="Payment-Method">
+                <label id="lab1">Debit /Credit Card</label>
+                <a href="" title="" id="change">Change Payment Method</a>
+          </div>
+          <div class="profile-form">
+            <p>
+                <label id="lab2">Payment Details</label>
+            </p>
+
+            <p>
+              <input type="text" placeholder="Enter Card Name" name="name" style="margin-left: 65px" maxlength="40" id="owner" required>
+            </p>
+
+            <p>
+              <input type="text" placeholder="Enter Card Number" name="uname" style="margin-left: 65px" id="cardNumber" required>
+            </p>
+
+            <p>
+              <input type="password" placeholder="CVV/CVC" name="psw" style="margin-left: 65px; width: 160px" maxlength="3" id="cvv" required>
+              <div class="cards" id="credit_cards">
+                        <img src="{%static 'images/courses/visa.png' %}" id="visa">
+                        <img src="{%static 'images/courses/mastercard.png'%}" id="mastercard">
+                        <img src="{%static 'images/courses/rupay.png'%}" id="rupay">
+              </div>
+            </p>
+
+            <p>
+              <input type="text" placeholder="Expiry Date MM/YY" class="a" style="margin-left: 65px" id="" maxlength="5" pattern="[0-9]*">
+            </p>
+
+            <p>
+                  <input type="checkbox" name="" value="remember" style="margin-left: 65px" />
+                  <label for="remember">Remember Card</label>
+            </p>
+            <br>
+           <div id="pay-now">
+             <a href="Course/final" title="" class="btn-edit" id="confirm-purchase"><P></P>CONFIRM ENROLLMENT</a>
+           </div>
+
+          </div>
+        </div>
+
+        <!--Receipt tags-->
+        <div class="receipt-form">
+          <div class="order-details">
+            <label id="order">ORDER DETAILS</label>
+          </div>
+
+          <div class="c-name">
+            <label id="c-name1">Course: Complete C Programming</label>
+          </div>
+
+          <div class="receipt">
+            <label for="" style="margin-left: 45px" class="sub-price">Course Price</label>
+            <label for="" style="margin-left: 146px" class="sub-price">₹</label>
+            <input id="price" value="950" class="s-price" readonly><br>
+
+            <label for="" style="margin-left: 45px" class="sub-price">GST</label>
+            <input id="discount" value="18" class="gst" style="margin-left: 205px" readonly>
+            <label for="" class="sub-price" style="margin-left: -6px">%</label><br>
+
+            <input type="text" name="" value="" placeholder="Enter Coupon Code" id="coupon" maxlength="6">
+            <input type="submit" name="" value="APPLY" class="btn-coupon" onclick="getPrice()">
+            <hr width="320px">
+
+            <label for="" style="margin-left: 45px" class="total">TOTAL</label>
+            <label for="" style="margin-left: 166px" class="total">₹</label>
+            <input id="total" class="t-price" readonly>
+          </div>
+
+          <div class="info">
+            <label>By Clicking "CONFIRM ENROLLMENT" button, you agree to the <a href="" title="" style="color: #d82a4e; text-decoration: none">"Terms and Conditions"</a>of Eklavya</label>
+          </div>
+        </div>
+
+ </div>
+
+    <!--End of Payment section tags-->
+
+
+</body>
+
+</html>

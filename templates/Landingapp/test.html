@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html lang="en">
+<head>
+  <title>Eklavya - Education Template</title>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="WebUni Education Template">
+  <meta name="keywords" content="webuni, education, creative, html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="{%static 'images/favicon.ico' %}" rel="shortcut icon"/>
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
+<link rel="stylesheet" href="{%static 'css/bootstrap.min.css'%}"/>
+
+<link rel="stylesheet" href="{%static 'css/style.cs' %}"/>
+
+
+<style>
+
+}
+</style>
+
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+</head>
+<body bgcolor="black">
+
+  <!-- Header section -->
+  <header class="header-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-3">
+          <div class="site-logo">
+            <img src="img/logo.png" alt="">
+          </div>
+          <div class="nav-switch">
+            <i class="fa fa-bars"></i>
+          </div>
+        </div>
+
+        <div class="col-lg-9 col-md-9">
+          <nav class="main-menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="courses.html">Courses</a></li>
+              <li>
+
+                    <button class="dropbtn" onclick="myFunction()">Dropdown
+                      <i class="fa fa-caret-down"></i>
+                      </button>
+                  <div  id="myDropdown">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                 <a href="#">Link 3</a>
+            </div>
+             </div>
+
+
+
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+        <div class="row">
+           <div class="col-md-50">
+              <a href="" class="site-btn header-btn">Update profile</a>
+           </div>d
+
+        </div>
+
+      </div>
+    </div>
+    </header>
+  <!-- Header section end -->
+  <!-- Hero section -->
+  <section id="sec" class="hero-section-set-bg" data-setbg="{%static 'images/bg.jpg' %}">
+          <img src="{%static 'images/bg.jpg' %}" alt="">
+
+
+    <div class="container">
+      <div class="container-fluid" id="kk">
+        </div>
+    </div>
+  </section>
+  <!-- Hero section end -->
+
+
+
+
+
+</body>
+</html>

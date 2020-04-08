@@ -1,0 +1,198 @@
+{%extends 'base.html' %}
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+	{%block head%}
+	<link rel="stylesheet" href="{%static 'css/Course.css' %}"/>
+	<script type="text/javascript" charset="utf-8" src="{%static  '/javascript/loader.js' %} "></script>
+
+	</script>
+
+	<title>Course template</title>
+{%endblock %}
+
+  <meta charset="UTF-8">
+	<meta name="description" content="WebUni Education Template">
+	<meta name="keywords" content="Eklavya, education, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Stylesheets -->
+
+</head>
+
+{% block body %}
+<body onload=hideAll('mydiv1')>
+    <!--Course section tags-->
+<div class="course">
+      <div class="course-label">
+        <img src="{% static 'images/courses/image-asset.png' %}" alt="" width="50px" height="50px" style="margin-bottom: 17px">
+        <label id="label1"><h3>My Courses</h3></label><br>
+      </div>
+
+     <!--Course Category and Search bar section tags-->
+     <div class="course-select">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="course-link" type="button" onclick="hideAll('mydiv1')" style="margin-right: -2px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">ONGOING COURSES</button>
+          <button class="course-link" type="button" onclick="hideAll('mydiv2')" style="margin-right: -2px">COMPLETED COURSES</button>
+          <button class="course-link" type="button" onclick="hideAll('mydiv3')" style=" border-top-right-radius: 5px; border-bottom-right-radius: 5px">OFFERRED COURSES</button>
+
+          <div class="search">
+            <input id="search-bar" type="text" placeholder="&nbsp;Enter Course name" aria-label="Search" style="margin-top: 5px; margin-right: 35px" maxlength="35">
+            <a href="#" id="search-btn" type="submit" style="margin-top: 5px">Search</a>
+          </div>
+      </div>
+      <!--Course Category and Search bar section tags-->
+
+
+      <!--Ongoing Course section tags-->
+
+      <div class="course-1" id='mydiv1'>
+				<!-- course module for multiple course -->
+
+			{% for i in userobj %}
+      	<div class="courses-on">
+					          <div class="course-bt">
+					            <a href="" title="" id="course-btn"><br>Course<p>Progress</p></a>
+					            <label class="video-number">00 Video Lectures</label>
+					          </div>
+					          <div class="course-details">
+					            <img src="{{i.course.courseimage.url}}" alt="" class="course-img"><br>
+					            <label class="course-name">{{i.course}}</label>
+					            <label class="validity">Validity:{{i.course.courseduration}}</label><br>
+					            <label class="instructor">Instructor:{{i.course.teachername}}</label>
+					            <label class="price">Progress: 0%</label>
+					          </div>
+					          <div class="course-show">
+					           <a href="Course/video" title="" id="go-course">Resume <p>Learning</p></a>
+					           <div class="rate">
+					              <input type="radio" id="star5" name="rate" value="5" />
+					              <label for="star5" title="Rate Us">5 stars</label>
+					              <input type="radio" id="star4" name="rate" value="4" />
+					              <label for="star4" title="Rate Us">4 stars</label>
+					              <input type="radio" id="star3" name="rate" value="3" />
+					              <label for="star3" title="Rate Us">3 stars</label>
+					              <input type="radio" id="star2" name="rate" value="2" />
+					              <label for="star2" title="Rate Us">2 stars</label>
+					              <input type="radio" id="star1" name="rate" value="1" />
+					              <label for="star1" title="Rate Us">1 star</label>
+					           </div>
+					          </div>
+					        </div>
+
+					 {%endfor%}
+			<!-- End of multiple course module -->
+      </div>
+      <!--End of Ongoing Course section tags-->
+
+
+
+      <!--Offered Courses section tags-->
+      <div class="course-1" id='mydiv2'>
+        <div class="courses">
+          <div class="course-bt">
+            <label id="course-btn"><br>Course<p>Completed</p></label>
+          </div>
+          <div class="course-details">
+            <img src="{%static 'images/courses/java.png' %}" alt="" class="course-img"><br>
+            <label class="course-name">Core Java</label>
+            <label class="validity">Validity: Ended</label><br>
+            <label class="instructor">Instructor: Durga Sir</label>
+            <label class="price">Marks: 00/100</label>
+          </div>
+          <div class="course-show">
+           <a href="" title="" id="go-course">Course <p>Report</p></a>
+           <div class="rate">
+              <input type="radio" id="star5" name="rate" value="5" />
+              <label for="star5" title="Rate Us">5 stars</label>
+              <input type="radio" id="star4" name="rate" value="4" />
+              <label for="star4" title="Rate Us">4 stars</label>
+              <input type="radio" id="star3" name="rate" value="3" />
+              <label for="star3" title="Rate Us">3 stars</label>
+              <input type="radio" id="star2" name="rate" value="2" />
+              <label for="star2" title="Rate Us">2 stars</label>
+              <input type="radio" id="star1" name="rate" value="1" />
+              <label for="star1" title="Rate Us">1 star</label>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!--End of Offered Courses section tags-->
+
+
+      <!--Completed Course section tags-->
+      <!--Course Number 1 section tags-->
+     <div id='mydiv3' class="off-course">
+      <div class="course-0">
+        <div class="courses">
+          <div class="course-bt">
+            <a href="" title="" id="course-btn"><br>Join<p>Course</p></a>
+            <label class="video-number">00 Video Lectures</label>
+          </div>
+          <div class="course-details">
+            <img src="{%static 'images/courses/c.png' %}" alt="" class="course-img"><br>
+            <label class="course-name">Complete C Programming</label>
+            <label class="validity">Validity: 1 Year</label><br>
+            <label class="instructor">Instructor: Saurav Shukla, Durga Sir and Sanchit Jain</label>
+            <label class="price">Price: ₹000</label>
+          </div>
+          <div class="course-show">
+            <a href="" title="" id="go-course">Go to <p>Course</p></a>
+           <div class="com-rate">
+              <label>Rating: 4.5 out of 5 stars</label>
+           </div>
+        </div>
+      </div>
+      </div>
+
+      <!--Course Number 2 section tags-->
+      <div class="course-2">
+        <div class="courses">
+          <div class="course-bt">
+            <a href="" title="" id="course-btn"><br>Join<p>Course</p></a>
+            <label class="video-number">00 Video Lectures</label>
+          </div>
+          <div class="course-details">
+            <img src="{%static 'images/courses/java.png' %}" alt="" class="course-img"><br>
+            <label class="course-name">Core Java</label>
+            <label class="validity">Validity: 1 Year</label><br>
+            <label class="instructor">Instructor: Durga Sir</label>
+            <label class="price">Price: ₹000</label>
+          </div>
+          <div class="course-show">
+            <a href="" title="" id="go-course">Go to <p>Course</p></a>
+           <div class="com-rate">
+              <label>Rating: 4.7 out of 5 stars</label>
+           </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Course Number 3 section tags-->
+      <div class="course-3">
+        <div class="courses">
+          <div class="course-bt">
+            <a href="" title="" id="course-btn"><br>Join<p>Course</p></a>
+            <label class="video-number">00 Video Lectures</label>
+          </div>
+          <div class="course-details">
+            <img src="{%static 'images/courses/python.png' %}" alt="" class="course-img"><br>
+            <label class="course-name">Basics of Python</label>
+            <label class="validity">Validity: 1 Year</label><br>
+            <label class="instructor">Instructor: Saurav Shukla</label>
+            <label class="price">Price: ₹000</label>
+          </div>
+          <div class="course-show">
+            <a href="" title="" id="go-course">Go to <p>Course</p></a>
+           <div class="com-rate">
+              <label>Rating: 4.0 out of 5 stars</label>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End of Course section tags-->
+{% endblock %}
+
+</body>
+
+</html>
